@@ -1,0 +1,24 @@
+<div>
+    <h2>Users {{ ::ctrl.version }}</h2>
+    <table class="table">
+        <tr>
+            <th>Gravatar</th>
+            <th><a href="" ng-click="ctrl.sort('name')">Nom</a></th>
+            <th><a href="" ng-click="ctrl.sort('age')">Age</a></th>
+            <th>Modifier</th>
+            <th>Supprimer</th>
+        </tr>
+           <tr ng-class="user.css" ng-repeat="user in ctrl.users | orderBy:ctrl.predicat:ctrl.reverse">
+                <td><dta-gravatar on-deactivate="ctrl.deactivate()" email="user.email"></dta-gravatar></td>
+                <td>{{ user.name }}</td>
+                <td>{{ user.age }}</td>
+                <td><a ng-href="/user/{{user.id}}" class="btn btn-lg btn-info" ng-if="!ctrl.undo[user.id]"><span class="glyphicon glyphicon-pencil"></span></a></td>
+                <td><a class="btn btn-lg btn-danger" ng-click="ctrl.supUser(user)" ng-if="!ctrl.undo[user.id]"><span class="glyphicon glyphicon-trash"></span></a>
+                <button class="btn btn-default" ng-if="ctrl.undo[user.id]" ng-click="ctrl.annul(user)">Annuler la suppression {{ctrl.user.name}}</button></td>
+        </tr>
+    </table>
+    <br>
+    <p class="alert alert-info">Nom de l'utilisateur le plus vieux : {{ ctrl.users | eldest | exclam:3}}</p>
+    <a class="btn btn-default" ng-href="/user">Ajouter un utilisateur</a><br>
+    
+</div>

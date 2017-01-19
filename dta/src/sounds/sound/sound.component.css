@@ -1,0 +1,11 @@
+sound-button {
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+    box-shadow: 10px 10px 5px #ddd;
+    padding: 1em;
+    margin: 2em;
+    border-radius: 1em;
+    background: purple;
+    color: #fff;
+}

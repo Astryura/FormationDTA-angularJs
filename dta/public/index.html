@@ -1,0 +1,47 @@
+<!DOCTYPE>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>PizzaYolo</title>
+    <script src="/app.bundle.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <style>
+    .center{
+        margin:0 auto;
+        text-align: center;
+        width:70%;
+    }
+    input.ng-invalid.ng-dirty { border-color: red; }
+    .annul{
+        background-color: lightgrey;
+        color:grey;
+        text-decoration: line-through;
+        cursor:wait;
+    }
+    .highl{
+      border:1px solid red;
+      color: red;
+      padding: 2px;
+    }
+    </style>
+    <base href="/">
+</head>
+<body ng-app='app'>
+   <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="/">Home</a></li>
+              <li><a href="/users">Users</a></li>
+              <li><a href="/sounds">Sounds Box</a></li>
+              <li><a href="/about">About</a></li>              
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <div class="center container-fluid" ng-view></div>
+    <!--<p>{{ ctrl.newUser | json }}</p>
+        <pre>{{ myForm | json }}</pre>-->
+
+</body>
+</html>

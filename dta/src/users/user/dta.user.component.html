@@ -1,0 +1,17 @@
+<form ng-class="{ invalid: userForm.$invalid && userForm.$dirty }" class="well center input-group" name="myForm" novalidate ng-submit="$ctrl.save(myForm, $ctrl.user)">
+    <h4 ng-if="!$ctrl.user.id">Ajouter un utilisateur :</h4><br>
+    <h4 ng-if="$ctrl.user.id">Modifier un utilisateur :</h4><br>
+    <input class="form-control" type="text" name="name" ng-model="$ctrl.user.name" required>
+    <p ng-if="myForm.name.$invalid && myForm.name.$dirty">Name Obligatoire</p>
+    <input major class="form-control" type="number" name="age" ng-maxlength='3' ng-model="$ctrl.user.age" required>
+    <p ng-if="myForm.age.$invalid && myForm.age.$dirty && myForm.age.$error.required">Age Obligatoire</p>
+    <p ng-if="myForm.age.$invalid && myForm.age.$dirty && myForm.age.$error.maxlength">Age Trop Long</p>
+    <p ng-if="myForm.age.$error.major && myForm.age.$invalid && myForm.age.$dirty">Trop jeune</p>
+     <div class="form-group">
+        <span uib-rating ng-model="$ctrl.user.rating" max="10"></span>
+    </div>
+    <br>
+    <button class="btn btn-primary" type="submit" ng-if="!$ctrl.user.id">Ajouter Utilisateur</button>
+    <button class="btn btn-primary" type="submit" ng-if="$ctrl.user.id">Modifier Utilisateur</button>
+    <a class="btn btn-default" ng-href="/users">Annuler</a>
+</form>
