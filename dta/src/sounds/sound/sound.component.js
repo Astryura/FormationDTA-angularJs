@@ -11,8 +11,8 @@ class SoundController{
             this.id = angular.copy(changes.id.currentValue);
         }
          if (changes.sound && changes.sound.currentValue) {
-            this.audio = new Audio(changes.sound.currentValue);
-            this.title = changes.sound.currentValue.split('/').pop();
+            this.audio = new Audio('./sounds/' + changes.sound.currentValue);
+            this.title = changes.sound.currentValue;
             this.audio.onended = () => this.$scope.$apply();
         }
     }

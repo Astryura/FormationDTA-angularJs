@@ -45,70 +45,70 @@
   "sounds": [
     {
       "id": 1,
-      "sound": "http://192.168.99.41:1337/10415.mp3"
+      "sound": "10415.mp3"
     },
     {
       "id": 2,
-      "sound": "http://192.168.99.41:1337/2639.mp3"
+      "sound": "2639.mp3"
     },
     {
       "id": 3,
-      "sound": "http://192.168.99.41:1337/10425.mp3"
+      "sound": "10425.mp3"
     },
     {
-      "sound": "http://192.168.99.41:1337/6114.mp3",
+      "sound": "6114.mp3",
       "id": 4
     },
     {
-      "sound": "http://192.168.99.41:1337/10425.mp3",
+      "sound": "10425.mp3",
       "id": 5
     },
     {
-      "sound": "http://192.168.99.41:1337/3634.mp3",
+      "sound": "3634.mp3",
       "id": 6
     },
     {
-      "sound": "http://192.168.99.41:1337/4072.mp3",
+      "sound": "4072.mp3",
       "id": 7
     },
     {
-      "sound": "http://192.168.99.41:1337/kick-tight.wav",
+      "sound": "kick-tight.wav",
       "id": 8
     },
     {
-      "sound": "http://192.168.99.41:1337/snare-tape.wav",
+      "sound": "snare-tape.wav",
       "id": 9
     },
     {
-      "sound": "http://192.168.99.41:1337/openhat-808.wav",
+      "sound": "openhat-808.wav",
       "id": 10
     },
     {
-      "sound": "http://192.168.99.41:1337/kick-floppy.wav",
+      "sound": "kick-floppy.wav",
       "id": 11
     },
     {
-      "sound": "http://192.168.99.41:1337/tom-808.wav",
+      "sound": "tom-808.wav",
       "id": 12
     },
     {
-      "sound": "http://192.168.99.41:1337/hihat-ring.wav",
+      "sound": "hihat-ring.wav",
       "id": 13
     },
     {
-      "sound": "http://192.168.99.41:1337/crash-808.wav",
+      "sound": "crash-808.wav",
       "id": 14
     },
     {
-      "sound": "http://192.168.99.41:1337/clap-tape.wav",
+      "sound": "clap-tape.wav",
       "id": 15
     },
     {
-      "sound": "http://192.168.99.41:1337/crash-noise.wav",
+      "sound": "crash-noise.wav",
       "id": 16
     },
     {
-      "sound": "http://192.168.99.41:1337/cowbell-808.wav",
+      "sound": "cowbell-808.wav",
       "id": 17
     }
   ]
